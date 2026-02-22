@@ -1,0 +1,123 @@
+# ============================================================
+# EMIPredict-AI .gitignore
+# ============================================================
+
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+MANIFEST
+
+# ---------------------------
+# Virtual Environment
+# ---------------------------
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ---------------------------
+# Environment Variables
+# ---------------------------
+.env
+.env.local
+.env.*.local
+*.env
+
+# ---------------------------
+# Jupyter Notebooks
+# ---------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ---------------------------
+# Large Data Files
+# (Use Git LFS or cloud storage like Google Drive / S3 instead)
+# ---------------------------
+data/EMI_dataset.csv
+data/processed_emi_data.csv
+data/*.csv
+data/*.parquet
+data/*.xlsx
+data/*.json
+
+# ---------------------------
+# Trained Model Files (large binaries)
+# (Re-train from retrain_model.py or download from release)
+# ---------------------------
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+# Keep feature_names.json — it's small and needed for inference
+!models/feature_names.json
+
+# ---------------------------
+# MLflow Experiment Tracking
+# (Large experiment artifacts — use a remote MLflow server instead)
+# ---------------------------
+mlruns/
+notebooks/mlruns/
+mlartifacts/
+
+# ---------------------------
+# IDE & Editor
+# ---------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ---------------------------
+# OS Files
+# ---------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---------------------------
+# Logs & Temporary Files
+# ---------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+logs/
+tmp/
+
+# ---------------------------
+# Testing & Coverage
+# ---------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+.tox/
+nosetests.xml
+
+# ---------------------------
+# Streamlit Secrets (sensitive!)
+# ---------------------------
+.streamlit/secrets.toml
+
+# ---------------------------
+# Setup / Distribution
+# ---------------------------
+*.spec
