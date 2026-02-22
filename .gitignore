@@ -57,13 +57,13 @@ data/*.json
 # Trained Model Files (large binaries)
 # (Re-train from retrain_model.py or download from release)
 # ---------------------------
-models/*.pkl
 models/*.h5
 models/*.pt
 models/*.pth
 models/*.onnx
-# Keep feature_names.json — it's small and needed for inference
+# Keep Streamlit models and metadata
 !models/feature_names.json
+!models/*.pkl
 
 # ---------------------------
 # MLflow Experiment Tracking
